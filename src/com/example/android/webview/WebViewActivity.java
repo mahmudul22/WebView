@@ -16,10 +16,6 @@ public class WebViewActivity extends Activity {
         super.onCreate(savedInstanceState);
         getWindow().requestFeature(Window.FEATURE_PROGRESS);
         setContentView(R.layout.main);
-<<<<<<< HEAD
-        myWebView = (WebView) findViewById(R.id.webView1);
-        myWebView.setWebViewClient(new WebViewClient());
-=======
         WebView myWebView = (WebView) findViewById(R.id.webView1);
         myWebView.getSettings().setJavaScriptEnabled(true);
         final Activity activity = this;
@@ -33,9 +29,6 @@ public class WebViewActivity extends Activity {
             Toast.makeText(activity, "Sorry! " + description, Toast.LENGTH_SHORT).show();
           }
         });
-
-        
->>>>>>> ChromeClient
         myWebView.loadUrl("http://129.242.19.250:3000/quiz/set 1");
     }
 
