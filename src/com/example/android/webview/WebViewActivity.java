@@ -16,7 +16,7 @@ public class WebViewActivity extends Activity {
         super.onCreate(savedInstanceState);
         getWindow().requestFeature(Window.FEATURE_PROGRESS);
         setContentView(R.layout.main);
-        WebView myWebView = (WebView) findViewById(R.id.webView1);
+        myWebView = (WebView) findViewById(R.id.webView1);
         myWebView.getSettings().setJavaScriptEnabled(true);
         final Activity activity = this;
         myWebView.setWebChromeClient(new WebChromeClient() {
